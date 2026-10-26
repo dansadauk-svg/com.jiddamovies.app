@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "791671894832",
+    "project_id": "jiddamovies",
+    "storage_bucket": "jiddamovies.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791671894832:android:4460efe632a81a82b9cef5",
+        "android_client_info": {
+          "package_name": "com.jiddamovies.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6_VW6a1GeDHfHEjS2HvRQ5gDOpE5UzeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,12 +35,11 @@ Add these Jidda Movies signing repository secrets:
 - `JIDDA_KEYSTORE_PASSWORD`
 - `JIDDA_KEY_PASSWORD`
 - `JIDDA_KEY_ALIAS`
-- `JIDDA_GOOGLE_SERVICES_JSON_BASE64` (required; use the new Jidda Firebase configuration)
+- `JIDDA_GOOGLE_SERVICES_JSON_BASE64` (optional fallback; `app/google-services.json` is already included)
 
 Use a dedicated Jidda Movies release key with the alias `jidda_movies`. The workflow produces APK and Play Store AAB artifacts.
 
-Create a new Firebase Android app registered to `com.jiddamovies.app`, then save
-its `google-services.json` as the GitHub secret `JIDDA_GOOGLE_SERVICES_JSON_BASE64`. Every installation subscribes to topic
+The included Firebase Android configuration is registered to `com.jiddamovies.app`. The Base64 secret is only needed if you intentionally remove `app/google-services.json`. Every installation subscribes to topic
 `jidda_movies_all`. Send broadcast notifications to that topic to address all
 registered devices at once.
 
