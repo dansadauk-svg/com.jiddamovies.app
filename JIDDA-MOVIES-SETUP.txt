@@ -8,7 +8,7 @@ Download notifications: enabled
 GITHUB BUILD
 1. Upload this project folder's contents to the root of the Jidda Movies GitHub repository.
 2. Keep the separate Jidda Movies release signing key safe and private.
-3. Add JIDDA_KEYSTORE_BASE64, JIDDA_KEYSTORE_PASSWORD, JIDDA_KEY_PASSWORD and JIDDA_KEY_ALIAS as GitHub repository secrets.
+3. Add JIDDA_KEYSTORE_BASE64, JIDDA_KEYSTORE_PASSWORD and JIDDA_KEY_PASSWORD as GitHub repository secrets. The signing alias is already fixed to jidda_movies.
 4. Firebase is already configured in app/google-services.json. JIDDA_GOOGLE_SERVICES_JSON_BASE64 is only an optional fallback.
 5. Open Actions > Build Jidda Movies APK and AAB > Run workflow.
 6. Download the APK for testing or AAB for Google Play Console.
