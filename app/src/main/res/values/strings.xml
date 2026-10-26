@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jidda Movies</string>
+    <string name="provider_authority">com.jiddamovies.app.fileprovider</string>
+    <string name="asset_statements">[{\"relation\":[\"delegate_permission/common.handle_all_urls\"],\"target\":{\"namespace\":\"web\",\"site\":\"https://jiddamovies.com.ng\"}}]</string>
+    <string name="push_channel_name">Jidda Movies updates</string>
+    <string name="push_channel_description">New movies and important Jidda Movies announcements</string>
+</resources>

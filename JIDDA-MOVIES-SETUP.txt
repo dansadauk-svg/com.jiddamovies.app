@@ -1,0 +1,20 @@
+JIDDA MOVIES ANDROID 1.0.0
+
+Name: Jidda Movies
+Package: com.jiddamovies.app (separate Play Store and Firebase project)
+Website: https://jiddamovies.com.ng/
+Download notifications: enabled
+
+GITHUB BUILD
+1. Upload this project folder's contents to the root of the Jidda Movies GitHub repository.
+2. Use a release signing key. The workflow defaults to alias gk_movies for compatibility.
+3. Add JIDDA_KEYSTORE_BASE64, JIDDA_KEYSTORE_PASSWORD and JIDDA_KEY_PASSWORD as GitHub repository secrets.
+4. Register com.jiddamovies.app as a new Firebase Android app and add its google-services.json as the required JIDDA_GOOGLE_SERVICES_JSON_BASE64 secret.
+5. Open Actions > Build Jidda Movies APK and AAB > Run workflow.
+6. Download the APK for testing or AAB for Google Play Console.
+
+APP LINKS
+Upload assetlinks.json to:
+https://jiddamovies.com.ng/.well-known/assetlinks.json
+
+The certificate fingerprint in assetlinks.json already matches the included Jidda Movies release signing key.

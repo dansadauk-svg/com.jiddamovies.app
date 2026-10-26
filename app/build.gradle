@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.jiddamovies.app'
+    compileSdk 36
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    defaultConfig {
+        applicationId 'com.jiddamovies.app'
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../jidda-movies-release-key.jks')
+            storePassword System.getenv('JIDDA_KEYSTORE_PASSWORD')
+            keyAlias System.getenv('JIDDA_KEY_ALIAS') ?: 'gk_movies'
+            keyPassword System.getenv('JIDDA_KEY_PASSWORD')
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force 'androidx.core:core:1.13.1'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-messaging'
+}

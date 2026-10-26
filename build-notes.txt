@@ -1,0 +1,9 @@
+Package name: com.jiddamovies.app
+Website: https://jiddamovies.com.ng/
+Version: 1.0.0 (code 1)
+Minimum SDK: 24
+Compile/target SDK: 36
+Download notifications: enabled
+Firebase push topic: jidda_movies_all
+Normal app orientation: portrait
+Offline cache and pull-to-refresh: included in the native WebView

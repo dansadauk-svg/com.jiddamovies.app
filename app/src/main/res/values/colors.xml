@@ -1,0 +1,10 @@
+<resources>
+    <color name="statusBarColor">#F4F7FF</color>
+    <color name="statusBarColorDark">#050D20</color>
+    <color name="navigationBarColor">#F4F7FF</color>
+    <color name="navigationBarColorDark">#050D20</color>
+    <color name="backgroundColor">#F4F7FF</color>
+    <color name="jiddaPrimary">#1746A2</color>
+    <color name="jiddaPrimaryDark">#123B8F</color>
+    <color name="jiddaGold">#D4AF37</color>
+</resources>

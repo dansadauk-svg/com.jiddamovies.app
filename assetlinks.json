@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jiddamovies.app",
+      "sha256_cert_fingerprints": [
+        "AB:31:FE:29:9D:0E:AC:BF:B5:C2:7B:D0:70:34:34:85:37:D9:BA:44:92:11:67:ED:C5:43:69:CC:77:89:34:49"
+      ]
+    }
+  }
+]
