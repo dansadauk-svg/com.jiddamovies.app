@@ -29,7 +29,7 @@ android {
             storeFile file('../jidda-movies-release-key.jks')
             storePassword System.getenv('JIDDA_KEYSTORE_PASSWORD')
             keyAlias 'jidda_movies'
-            keyPassword System.getenv('JIDDA_KEY_PASSWORD')
+            keyPassword System.getenv('JIDDA_KEYSTORE_PASSWORD')
         }
     }
 
